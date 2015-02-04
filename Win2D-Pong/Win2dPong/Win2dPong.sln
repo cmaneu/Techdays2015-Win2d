@@ -11,6 +11,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win2dPong.Windows", "Win2dP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win2dPong.WindowsPhone", "Win2dPong\Win2dPong.WindowsPhone\Win2dPong.WindowsPhone.csproj", "{14C8F7EB-5F85-4733-A943-4D666D86C804}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{95BA711A-56F7-42A0-82BA-086B5855D897}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Win2dPong\Win2dPong.Shared\Win2dPong.Shared.projitems*{63a2454b-73c1-46bc-a215-c543c52620b4}*SharedItemsImports = 4
