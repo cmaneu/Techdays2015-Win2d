@@ -5,9 +5,14 @@
     xmlns:local="using:Win2dPong"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:canvas="using:Microsoft.Graphics.Canvas"
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <canvas:CanvasAnimatedControl x:Name="PongCanvas" 
+                                      Draw="PongCanvas_OnDraw"
+                                      Update="PongCanvas_OnUpdate"
+                                      ClearColor="SlateGray"
+                                      />
     </Grid>
 </Page>
