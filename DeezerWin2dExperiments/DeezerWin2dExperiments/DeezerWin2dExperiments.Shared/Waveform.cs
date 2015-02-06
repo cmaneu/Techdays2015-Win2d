@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 using Windows.UI;
 using Microsoft.Graphics.Canvas;
@@ -32,6 +33,12 @@ namespace DeezerWin2dExperiments
 
         public void Draw(CanvasDrawingSession drawingSession, double width, double height, Color foregroundColor, Color foreground2Color, bool halfWaveform = false)
         {
+            if (_map == null)
+            {
+                Debug.WriteLine("MAP IS NULLLLL");
+                return;
+            }
+
             int min, max;
             var mid = Math.Floor(height / 2);
 
