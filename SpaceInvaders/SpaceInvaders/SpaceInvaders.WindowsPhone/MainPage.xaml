@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="SpaceInvaders.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SpaceInvaders"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:canvas="using:Microsoft.Graphics.Canvas"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <canvas:CanvasAnimatedControl x:Name="Canvas"></canvas:CanvasAnimatedControl>
+
+        <StackPanel HorizontalAlignment="Left"
+                    VerticalAlignment="Center">
+            <Border Width="40"
+                    Height="40"
+                    PointerPressed="OnLeftPointerPressed"
+                    HorizontalAlignment="Left"
+                    Background="BlueViolet"
+                    PointerReleased="OnLeftPointerReleased"></Border>
+            <Border Width="40"
+                    Height="40"
+                    PointerPressed="OnBulletPointerPressed"
+                    HorizontalAlignment="Left"
+                    Background="MediumVioletRed"
+                    PointerReleased="OnBulletPointerReleased"></Border>
+        </StackPanel>
+
+        <Border Width="40"
+                Height="40"
+                Background="BlueViolet"
+                HorizontalAlignment="Right"
+                PointerPressed="OnRightPointerPressed"
+                PointerReleased="OnRightPointerReleased"></Border>
+    </Grid>
+</Page>
