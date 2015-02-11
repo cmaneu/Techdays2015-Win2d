@@ -119,7 +119,7 @@
                         
                         
                         <Grid Grid.Column="1">
-                            <local:WaveformControl ForegroundColor="#FFD7E2EC"
+                            <local:WaveformControl ForegroundColor="#FFE2E2E2"
                                                    Foreground2Color="#FFE4E0E0"
                                                    WaveformData="{Binding WaveformData}"
                                                    ></local:WaveformControl>
